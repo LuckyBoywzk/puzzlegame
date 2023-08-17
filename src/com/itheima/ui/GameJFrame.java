@@ -23,7 +23,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
 
     int x;
     int y;
-    String path = "puzzlegame\\image\\dongman\\dongman";
+    String path = "image\\dongman\\dongman";
     int[][] win = new int[][]{
             {1, 2, 3, 4},
             {5, 6, 7, 8},
@@ -92,7 +92,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
 
         // 加载胜利图片
         if (victory()) {
-            JLabel win = new JLabel(new ImageIcon("puzzlegame\\image\\win.jpg"));
+            JLabel win = new JLabel(new ImageIcon("image\\win.jpg"));
             win.setBounds(193, 245, 200, 200);
             this.getContentPane().add(win);
         }
@@ -117,7 +117,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
 
         //加载背景图
         // 获取JLabel对象容器
-        JLabel background = new JLabel(new ImageIcon("puzzlegame\\image\\background.jpg"));
+        JLabel background = new JLabel(new ImageIcon("image\\background.jpg"));
         background.setBounds(40, 40, 508, 560);
         this.getContentPane().add(background);
 
@@ -204,7 +204,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
 
             //加载背景图
             // 获取JLabel对象容器
-            JLabel background = new JLabel(new ImageIcon("puzzlegame\\image\\background.jpg"));
+            JLabel background = new JLabel(new ImageIcon("image\\background.jpg"));
             background.setBounds(40, 40, 508, 560);
             this.getContentPane().add(background);
             // 刷新
@@ -326,7 +326,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
             // 设置弹窗大小
             dialog.setSize(344, 344);
             // 创建JLabel对象
-            JLabel wechat = new JLabel(new ImageIcon("puzzlegame\\image\\me.jpg"));
+            JLabel wechat = new JLabel(new ImageIcon("image\\me.jpg"));
             // 设置图片位置
             wechat.setBounds(0, 0, 258, 258);
             // 设置顶置
@@ -345,7 +345,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
             a = r.nextInt(10);
             System.out.println("加载第" + a + "个图片");
             // 切换动漫图片的路径
-            path = "puzzlegame\\image\\dongman\\dongman";
+            path = "image\\dongman\\dongman";
             // 步数清零
             step = 0;
             // 初始化数据
@@ -357,7 +357,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
             a = r.nextInt(5);
             System.out.println("加载第" + a + "个图片");
             // 切换图片的路径
-            path = "puzzlegame\\image\\gril\\gril";
+            path = "image\\gril\\gril";
             // 步数清零
             step = 0;
             // 初始化数据
@@ -369,7 +369,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
             a = r.nextInt(4);
             System.out.println("加载第" + a + "个图片");
             // 切换图片的路径
-            path = "puzzlegame\\image\\view\\view";
+            path = "image\\view\\view";
             // 步数清零
             step = 0;
             // 初始化数据

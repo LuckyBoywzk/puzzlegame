@@ -13,8 +13,7 @@ import java.util.Random;
 public class LoginJFrame extends JFrame implements ActionListener, MouseListener {
     static ArrayList<User> list = new ArrayList<>();
     static {
-        list.add(new User("wzk", "123"));
-        list.add(new User("tom", "1234"));
+        list.add(new User("tom", "123"));
     }
 
     // 输入用户名的文本框
