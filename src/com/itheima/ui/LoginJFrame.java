@@ -129,6 +129,7 @@ public class LoginJFrame extends JFrame implements ActionListener, MouseListener
             if (temp == 1) {
                 System.out.println("登录成功");
                 new GameJFrame();
+                this.setVisible(false);
             }
             else if (temp == 0){
                 System.out.println("登录失败");
